@@ -7,7 +7,6 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:onClick=""
         android:id="@+id/moviePic"
         android:layout_width="92dp"
         android:layout_height="169dp"
