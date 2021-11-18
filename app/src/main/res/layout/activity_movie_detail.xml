@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/moviePic"
+        android:id="@+id/moviePicDetail"
         android:layout_width="252dp"
         android:layout_height="313dp"
         android:src="@drawable/buah_001"
