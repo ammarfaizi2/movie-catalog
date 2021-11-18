@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     private void createListView()
     {
         simpleList = findViewById(R.id.simpleListView);
-        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), listData, pics);
+        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), listData, pics, this);
         simpleList.setAdapter(customAdapter);
     }
 }

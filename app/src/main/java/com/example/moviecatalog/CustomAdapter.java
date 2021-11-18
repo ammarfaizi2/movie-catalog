@@ -1,6 +1,7 @@
 package com.example.moviecatalog;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -20,11 +21,18 @@ public class CustomAdapter extends BaseAdapter {
     List<String[]> listData;
     List<Integer> pics;
     LayoutInflater inflter;
+    public static String title_;
+    public static String overview_;
+    public static String releaseDate_;
+    public static String pic_;
+    final private MainActivity main;
 
-    public CustomAdapter(Context applicationContext, List<String[]> listData, List<Integer> pics) {
+    public CustomAdapter(Context applicationContext, List<String[]> listData, List<Integer> pics,
+                         MainActivity main) {
         this.listData = listData;
         this.pics = pics;
         inflter = (LayoutInflater.from(applicationContext));
+        this.main = main;
     }
 
     @Override
@@ -53,6 +61,17 @@ public class CustomAdapter extends BaseAdapter {
         overview.setText(listData.get(i)[1]);
         releaseDate.setText(listData.get(i)[2]);
         new DownloadImageTask(pic).execute(listData.get(i)[3]);
+        pic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomAdapter.title_ = listData.get(i)[0];
+                CustomAdapter.overview_ = listData.get(i)[1];
+                CustomAdapter.releaseDate_ = listData.get(i)[2];
+                CustomAdapter.pic_ = listData.get(i)[3];
+                Intent intent = new Intent(CustomAdapter.this.main, MovieDetail.class);
+                main.startActivity(intent);
+            }
+        });
         return view;
     }
 }
