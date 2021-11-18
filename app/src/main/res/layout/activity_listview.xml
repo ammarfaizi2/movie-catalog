@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:translationZ="90dp">
 
     <ImageView
         android:id="@+id/moviePic"
         android:layout_width="92dp"
         android:layout_height="169dp"
-        android:src="@drawable/buah_001"
+        android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toStartOf="@+id/movieTitle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

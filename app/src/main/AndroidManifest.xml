@@ -16,13 +16,17 @@
             android:name=".MovieDetail"
             android:exported="true"
             android:label="@string/title_activity_movie_detail"
-            android:theme="@style/Theme.MovieCatalog.NoActionBar" />
+            android:theme="@style/Theme.MovieCatalog" />
+        <activity
+            android:name=".MovieDirectory"
+            android:exported="true"
+            android:label="@string/movie_directory"
+            android:theme="@style/Theme.MovieCatalog" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

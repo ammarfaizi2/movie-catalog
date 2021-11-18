@@ -10,7 +10,7 @@
         android:id="@+id/moviePicDetail"
         android:layout_width="252dp"
         android:layout_height="313dp"
-        android:src="@drawable/buah_001"
+        android:src="@drawable/ic_launcher_background"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -25,10 +25,10 @@ public class CustomAdapter extends BaseAdapter {
     public static String overview_;
     public static String releaseDate_;
     public static String pic_;
-    final private MainActivity main;
+    final private MovieDirectory main;
 
     public CustomAdapter(Context applicationContext, List<String[]> listData, List<Integer> pics,
-                         MainActivity main) {
+                         MovieDirectory main) {
         this.listData = listData;
         this.pics = pics;
         inflter = (LayoutInflater.from(applicationContext));
@@ -72,6 +72,7 @@ public class CustomAdapter extends BaseAdapter {
                 main.startActivity(intent);
             }
         });
+        view.bringToFront();
         return view;
     }
 }
