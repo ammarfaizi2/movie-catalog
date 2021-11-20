@@ -25,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MovieDirectory.class);
             startActivity(intent);
         });
+
+        Button btnAbout = findViewById(R.id.btn_about);
+        btnAbout.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, About.class);
+            startActivity(intent);
+        });
     }
 }

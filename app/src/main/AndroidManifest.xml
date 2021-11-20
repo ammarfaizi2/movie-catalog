@@ -18,6 +18,11 @@
             android:label="@string/title_activity_movie_detail"
             android:theme="@style/Theme.MovieCatalog" />
         <activity
+            android:name=".About"
+            android:exported="true"
+            android:label="@string/about"
+            android:theme="@style/Theme.MovieCatalog" />
+        <activity
             android:name=".MovieDirectory"
             android:exported="true"
             android:label="@string/movie_directory"

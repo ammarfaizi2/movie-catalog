@@ -4,4 +4,6 @@
     <string name="title_activity_movie_detail">Detail Film</string>
     <string name="movie_directory">Direktori Film</string>
     <string name="language_setting">Pengaturan Bahasa</string>
+    <string name="about">Tentang</string>
+    <string name="release_date">Tanggal Release</string>
 </resources>

@@ -13,4 +13,6 @@
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="movie_directory">Movie Directory</string>
     <string name="language_setting">Language Setting</string>
+    <string name="about">About</string>
+    <string name="release_date">Release Date</string>
 </resources>
